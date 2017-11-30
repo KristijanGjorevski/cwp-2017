@@ -3,21 +3,25 @@
 <head>
 	<title></title>
 	<script src="stepeni.js"></script>
-	<link rel="stylesheet" type="text/css" href="stepeni.css">
+	<!-- <link rel="stylesheet" type="text/css" href="stepeni.css"> -->
 </head>
 <body>
 	<div id="box">
-		<form>
-			<input class="celsius" type="text" name="	input" placeholder="celsius">
-			<input class="fahrenheit" type="text" name="	output" placeholder="fahrenheit">
-			<button onclick="c2f();" class="submit">
-				<span>Celsius to Fahrenheit</span>
-			</button>
-			<button onclick="f2c();" class="submit">
-				<span>Fahrenheit to Celsius </span>
-			</button>
-		</form>
+		<input onkeypress="presmetajMomentalno();" class="celsius" type="text" name="celsius" id="celsius" placeholder="celsius">
+		<input class="fahrenheit" type="text" name="fahrenheit" id="fahrenheit" placeholder="fahrenheit">
+		<button onclick="c2f();" class="submit">
+			<span>Celsius to Fahrenheit</span>
+		</button>
+		<input type="button" name="" onclick="f2c();" class="submit" value="Fahrenheit to Celsius">
+		<div name="result" id="result"></div>
 	</div>
-
+	<div>
+		<input onchange="asd(this)" class="celsius" type="text" name="asd" id="asd" placeholder="test">
+		<input onchange="asd(this)" class="celsius" type="text" name="asd" id="asd" placeholder="test">
+		<input onchange="asd(this)" class="celsius" type="text" name="asd" id="asd" placeholder="test">
+		<input onchange="asd(this)" class="celsius" type="text" name="asd" id="asd" placeholder="test">
+		<input onchange="asd(this)" class="celsius" type="text" name="asd" id="asd" placeholder="test">
+		<input onchange="asd(this)" class="celsius" type="text" name="asd" id="asd" placeholder="test">
+	</div>
 </body>
 </html>

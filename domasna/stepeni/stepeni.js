@@ -1,23 +1,55 @@
-var celsius = getElementByClassName('celsius').value ;
-var fahrenheit = getElementByClassName('fahrenheit').value ;
+// function c2f () {
+// 	var celsius = document.getElementById('celsius').value;
+// 	var fahrenheit = calculateC2F(celsius);
+// 	document.getElementById('result').innerHTML = fahrenheit;
+// }
 
-function c2f (fahrenheit) {
-	fahrenheit = fahrenheit * 9/5 + 32;
-		return fahrenheit;
+// function calculateC2F(celsius) {
+// 	var fahrenheit = celsius * 9/5 + 32;
+// 	return fahrenheit;
+// }
+
+
+function c2f () {
+	var celsius = document.getElementById('celsius').value;
+	var fahrenheit = celsius * 9/5 + 32;
+	document.getElementById('fahrenheit').value = fahrenheit;
+}
+function presmetajMomentalno(){
+	var celsius = document.getElementById('celsius').value;
+	var fahrenheit = celsius * 9/5 + 32;
+	document.getElementById('fahrenheit').value = fahrenheit;
 }
 
-function f2c(celsius) {
-	celsius = (celsius - 32) * 5/9
-		return celsius;
 
+
+//se povikuva koga ke se izloadira browserot
+window.onload = function() {
+  var celsius = document.getElementById('celsius').value;
+
+};
+
+
+
+function asd(elementov){
+	
+	alert(elementov.value);
+	elementov.style.display = 'none';
 }
 
 
 
-c2f(celsius) {
-	document.getElementByClassName('fahrenheit') = celsius;
+
+function f2c(celsius, fahrenheit) {
+	// var fahrenheit = getElementByClassName('fahrenheit').value;
+	celsius = (fahrenheit - 32) * 5/9;
+	return celsius;
 }
 
-f2c(fahrenheit) {
+
+
+
+
+function f2c(fahrenheit) {
 	document.getElementByClassName('celsius').value = fahrenheit;
 }
