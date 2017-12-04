@@ -31,3 +31,7 @@ niza5.forEach(function(value,index){
 
 });
 
+niza5.forEach(function (value, index) {
+    
+});
+
