@@ -15,10 +15,15 @@ function c2f () {
 	var fahrenheit = celsius * 9/5 + 32;
 	document.getElementById('fahrenheit').value = fahrenheit;
 }
-function presmetajMomentalno(){
+function presmetajMomentalnoc2f(){
 	var celsius = document.getElementById('celsius').value;
 	var fahrenheit = celsius * 9/5 + 32;
 	document.getElementById('fahrenheit').value = fahrenheit;
+}
+function presmetajf2c() {
+	var fahrenheit = document.getElementById('fahrenheit').value;
+	var celsius = (fahrenheit - 32) * 5/9;
+	document.getElementById('celsius').value = celsius;
 }
 
 
@@ -26,7 +31,7 @@ function presmetajMomentalno(){
 //se povikuva koga ke se izloadira browserot
 window.onload = function() {
   var celsius = document.getElementById('celsius').value;
-
+  var fahrenheit = document.getElementById('fahrenheit').value;
 };
 
 
@@ -41,7 +46,7 @@ function asd(elementov){
 
 
 function f2c(celsius, fahrenheit) {
-	// var fahrenheit = getElementByClassName('fahrenheit').value;
+	var fahrenheit = getElementByClassName('fahrenheit').value;
 	celsius = (fahrenheit - 32) * 5/9;
 	return celsius;
 }
@@ -53,3 +58,5 @@ function f2c(celsius, fahrenheit) {
 function f2c(fahrenheit) {
 	document.getElementByClassName('celsius').value = fahrenheit;
 }
+
+
