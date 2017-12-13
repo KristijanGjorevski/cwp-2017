@@ -68,7 +68,7 @@ var o1 = {
 	profesori: [
 		{
 			ime: 'Pero',
-			prezime: 'Perovski',
+			prezime: 'Perovski'
 		},
 		{
 			ime: 'Janko',
@@ -102,7 +102,7 @@ var niza4 = [2, 2, 3, 5, 4, 5, 4, 6, 7, 8, 9];
 // console.log(niza4[4]);
 
 for(var i = 0; i < niza4.length; i++) {
-	if(niza4[i] % 2 == 0){
+	if(niza4[i] % 2 === 0){
 		console.log(niza4[i]);
 	}
 }
