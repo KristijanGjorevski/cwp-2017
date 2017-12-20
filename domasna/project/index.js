@@ -55,8 +55,8 @@ sliki.forEach(function (currentValue) {
     templateTitle.appendChild(link);
     figure.appendChild(templateTitle);
     removeBtn.appendChild(icons);
-    li.appendChild(removeBtn);
     li.appendChild(figure);
+    li.appendChild(removeBtn);
     listContainer.appendChild(li);
 });
 
@@ -116,62 +116,8 @@ function zoomPic() {
     document.body.style.overflow = "hidden";
     closeBtn.onclick = function() {
         boxModel.style.display = "none";
-        document.body.style.overflow = "default";
+        document.body.style.overflow = "scroll";
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
-// window.onload = function() {
-//     var parent = document.getElementById('neno');
-//     var ul = document.createElement('ul');
-//
-//     sliki.forEach(function(current_element) {
-//
-//         var temp_element = document.createElement('li');
-//         var figure = document.createElement('figure');
-//         var img = document.createElement('img');
-//         var h3 = document.createElement('h3');
-//         var a = document.createElement('a');
-//         var btn = document.createElement('btn');
-//
-//         a.innerHTML = current_element.title;
-//         a.setAttribute('href', current_element.href);
-//         h3.appendChild(a);
-//         img.setAttribute('src', current_element.image);
-//         img.setAttribute('class', 'img');
-//         figure.appendChild(img);
-//         figure.appendChild(h3);
-//
-//         temp_element.appendChild(figure);
-//         temp_element.appendChild(btn);
-//
-//         ul.appendChild(temp_element);
-//     });
-//
-//     parent.appendChild(ul);
-//
-// };
 
 
