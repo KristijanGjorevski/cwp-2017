@@ -1,53 +1,124 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Lawyer Attorney</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
-	<link rel="stylesheet" type="text/css" href="assets/fonts/fonts.css">
 
-		<!--  https://css-tricks.com/snippets/css/using-font-face/    https://www.webdesignerdepot.com/2013/01/how-to-use-any-font-you-like-with-css3/			 -->
+<head>
+    <meta charset="utf-8">
+    <title>Lawyer Attorney</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slider.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/fonts.css">
+    <!--  https://css-tricks.com/snippets/css/using-font-face/    https://www.webdesignerdepot.com/2013/01/how-to-use-any-font-you-like-with-css3/			 -->
 </head>
+
 <body>
-	<header>
-		<div class="logo">
-			<span>Lawyer</span>
-			<figure>
-				<img src="logo.png" alt="logo" class="logo">
-				<figcaption>Personal injury attorney</figcaption>
-			</figure>
-			<span>Attorney</span>
-		</div>
-		<div class="call-action">
-			<span>call us: <a href="#" class="contact_numb">+389-71-308-148</a></span>
-			<button class="request_btn">Request a free consultation</button>
-		</div>
-		<nav>
-			<ul>
-				<li>
-					<a href="#">Home</a>
-				</li>
-				<li>
-					<a href="#">About us</a>
-				</li>
-				<li>
-					<a href="#">Attorneys</a>
-				</li>
-				<li>
-					<a href="#">News</a>
-				</li>
-				<li>
-					<a href="#">Practice Areas</a>
-				</li>
-				<li>
-					<a href="#">QA</a>
-				</li>
-				<li>
-					<a href="#">Contact</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<script type="text/javascript" src="index.js"></script>
+    <header>
+        <div class="logo">
+            <span class=logo_text>Lawyer</span>
+            <figure>
+                <img src="logo1.png" alt="logo">
+            </figure>
+            <span class="caption">Personal injury attorney</span>
+            <span class=logo_text>Attorney</span>
+        </div>
+        <div class="call-action">
+            <span>call us: <a href="#" class="contact_numb">+389-71-308-148</a></span>
+            <button class="request_btn">Request a free consultation</button>
+        </div>
+        <nav class="nav-meni">
+            <ul class="nav-list">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About us</a>
+                </li>
+                <li>
+                    <a href="#">Attorneys</a>
+                </li>
+                <li>
+                    <a href="#">News</a>
+                </li>
+                <li>
+                    <a href="#">Practice Areas</a>
+                </li>
+                <li>
+                    <a href="#">QA</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- slider -->
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="slider_overlay"></div>
+            <img src="assets/pictures/slider/slider_img_1.jpg">
+            <div class="slider_text">
+                <h5>LAWYER & ATTORNEY</h5>
+                <span>Free consaulting advice for you and everyone you care</span>
+                <ul class="slider_dedication">
+                    <li><b>24/7</b><span>dedicated support</span></li>
+                    <li><b>30 days</b><span>Money back guarantee</span></li>
+                    <li><b>+30,000</b><span>client trust TATAM</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="slider_overlay"></div>
+            <img src="assets/pictures/slider/slider_img_2.jpg">
+            <div class="slider_text">
+                <h5>LAWYER & ATTORNEY</h5>
+                <span>Free consaulting advice for you and everyone you care</span>
+                <ul class="slider_dedication">
+                    <li><b>24/7</b><span>dedicated support</span></li>
+                    <li><b>30 days</b><span>Money back guarantee</span></li>
+                    <li><b>+30,000</b><span>client trust TATAM</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="slider_overlay"></div>
+            <img src="assets/pictures/slider/slider_img_3.jpg">
+            <div class="slider_text">
+                <h5>LAWYER & ATTORNEY</h5>
+                <span>Free consaulting advice for you and everyone you care</span>
+                <ul class="slider_dedication">
+                    <li><b>24/7</b><span>dedicated support</span></li>
+                    <li><b>30 days</b><span>Money back guarantee</span></li>
+                    <li><b>+30,000</b><span>client trust TATAM</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- Indicators -->
+    <div class="indicators" style="slider_text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <div class="quotes">
+        <h5><abbr title="Lawyer Attorney">Who are we</abbr></h5>
+        <blockquote cite="https://www.goodreads.com/quotes/103979-politicians-were-mostly-people-who-d-had-too-little-morals-and">"Politicians were mostly people who'd had too little morals and ethics to stay lawyers."</blockquote>
+        <span>― George R.R. Martin, Ace in the Hole</span>
+    </div>
+    <div class="perosns">
+
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
 </body>
+
 </html>
