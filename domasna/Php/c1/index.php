@@ -2,9 +2,9 @@
 
    // print_r($_POST);
 
-    foreach($_POST AS $key => $value){
+    foreach($_POST AS $arrey){
 
-        echo "this is the key $key <br/>";
+        echo "this is the key $value <br/>";
         
         
     }

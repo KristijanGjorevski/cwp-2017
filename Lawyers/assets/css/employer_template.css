@@ -1,0 +1,72 @@
+/* Who are we - employers */
+
+.employers_container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.template_text {
+    padding: 15px;
+}
+
+.template_text h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.template_text p {
+    padding: 5vh 15px;
+    text-indent: 1vw;
+    line-height: 1.5;
+}
+
+.contact_person {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+.contact_person span:last-child {
+    color: rgb(183, 121, 33);
+}
+
+
+/* left template */
+
+.left_template {
+    display: grid;
+    grid-template-columns: 33% 67%;
+    text-align: left;
+    border-right: 1px solid gray;
+}
+
+.employer1_img {
+    background: url("../pictures/person1_small.png"), rgb(183, 121, 33);
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+
+/* right template */
+
+.right_template {
+    display: grid;
+    grid-template-columns: 67% 33%;
+    text-align: right;
+}
+
+.employer2_img {
+    background: url("../pictures/person2_small.png"), rgb(183, 121, 33);
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
