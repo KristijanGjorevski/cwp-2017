@@ -114,11 +114,11 @@ header {
     align-items: center;
 }
 
-.quotes abbr {
+.quotes h5, abbr {
+    margin-top:12px;
     text-decoration: unset;
     border-bottom: 0.05em solid #e19221;
     font-size: 4vh;
-    margin: 10px;
 }
 
 .quotes blockquote {
@@ -128,4 +128,5 @@ header {
 
 .quotes span {
     align-self: flex-end;
+    font-size: 11px;
 }
