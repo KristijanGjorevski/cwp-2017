@@ -45,7 +45,7 @@
 }
 
 .employer1_img {
-    background: url("../pictures/person1_small.png"), rgb(183, 121, 33);
+    background: url("../pictures/employers/person1_small.png"), rgb(183, 121, 33);
     background-repeat: no-repeat;
     height: 250px;
     width: 250px;
@@ -63,7 +63,7 @@
 }
 
 .employer2_img {
-    background: url("../pictures/person2_small.png"), rgb(183, 121, 33);
+    background: url("../pictures/employers/person2_small.png"), rgb(183, 121, 33);
     background-repeat: no-repeat;
     height: 250px;
     width: 250px;
