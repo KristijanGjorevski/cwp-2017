@@ -5,8 +5,7 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: 100%;
     width: 80%;
-    margin: auto;
-    margin-top: 100px;
+    margin: 10vh auto;
 }
 
 .template_text {
