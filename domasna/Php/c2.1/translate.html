@@ -12,7 +12,11 @@
 
 <body>
     <form action="translate.php" method="POST">
-        <input type="text" name="translate">
+        <textarea name="translate"></textarea>
+    <select name="convertor">
+        <option value="c2l">Cyrilic to Latin</option>
+        <option value="l2c">Latin to Cyrilic</option>
+    </select>
         <input type="submit" value="Convert">
     </form>
 
