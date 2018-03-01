@@ -17,7 +17,7 @@
     text-align: center;
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin: auto;
 }
 
@@ -52,28 +52,6 @@
 .practice_lists:hover::after {
     opacity: 1;
 }
-
-
-/* .practice_lists {
-    margin: 2vw;
-    padding: 10px;
-    background-color: white;
-    box-shadow: 0 3px 5px rgba(128, 128, 128, 0.6);
-}
-
-.practice_lists:after {
-    box-shadow: 1px 6px 15px rgba(128, 128, 128, 1);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.practice_lists:hover {
-    transform: scale(1.1, 1.1);
-}
-
-.practice_lists:hover:after {
-    opacity: 1;
-} */
 
 .practice_lists h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -121,4 +99,13 @@
 
 .fa-comments {
     color: rgb(183, 121, 33);
+}
+
+.sponsors {
+    padding: 90px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    align-items: stretch;
+    justify-items: center;
 }

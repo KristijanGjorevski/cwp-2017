@@ -1,9 +1,8 @@
 <?php 
 
+echo '<pre>'; print_r($_FILES); echo '</pre>';
 
-print_r($_FILES);
-
-$filename = $_FILES["image"]["name"];
+$filename = $_FILES["textfile"]["name"];
 $tmp = $_FILES["image"]["tmp_name"];
 
 move_uploaded_file($tmp,"uploads/".$filename);
