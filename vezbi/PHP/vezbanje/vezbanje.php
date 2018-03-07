@@ -1,48 +1,33 @@
 <?php 
 
- // create curl resource 
- $c_c = curl_init(); 
+ class Person
+ {
 
- $url = "http://www.google.com";
- // set url 
- curl_setopt($c_c, CURLOPT_URL,$url ); 
- //return the transfer as a string 
- curl_setopt($c_c, CURLOPT_RETURNTRANSFER, 1); 
- // $output contains the output string 
+     static $age = 0;
+     public $gender;
+     private $name;
 
- curl_setopt($c_c, CURLOPT_HEADER, 0);
- $output = curl_exec($c_c); 
- // close curl resource to free up system resources 
- curl_close($c_c);
+     public function setName($name)
+     {
+         $this->name = $name;
 
- echo $output;
+         echo "Hello all, i am ${name}, nice to meet you.";
+     }
+     public function getName(){
+         return $this->name;
+     }
+
+     
+
+ }
+ 
+$class1 = new Person;
+
+
+$scott = new Person;
+
+$scott->setName("Scott");
+$scott->getName();
+
 
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

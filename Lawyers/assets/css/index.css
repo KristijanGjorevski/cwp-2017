@@ -148,10 +148,11 @@ abbr {
 
 footer {
     display: grid;
-    grid-template-columns: 30% auto 30%;
+    grid-template-columns: 40% 20% 40%;
     align-items: baseline;
     width: 100%;
     height: 90px;
+    padding: 15px;
     z-index: 9999;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -162,14 +163,16 @@ footer>span {
 }
 
 footer .logo {
-    justify-self: end;
+    justify-self: center;
 }
 
 .social_media {
-    justify-self: center;
+    justify-self: end;
     font-size: 30px;
 }
 
 .social_media a {
     color: #e19221;
+    width: 100%;
+    height: 100%;
 }
