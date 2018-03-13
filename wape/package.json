@@ -1,0 +1,14 @@
+{
+    "name": "wape",
+    "version": "1.0.0",
+    "description": "Language desktop app",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "author": "Kiko",
+    "license": "ISC",
+    "dependencies": {
+        "electron": "^1.8.2"
+    }
+}

@@ -1,7 +1,7 @@
 .practice_content {
     position: relative;
     width: 100%;
-    height: 700px;
+    height: auto;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../pictures/practice/practice_background.jpg") center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,6 +47,7 @@
 
 .practice_lists:hover {
     transform: scale(1.1, 1.1);
+    cursor: pointer;
 }
 
 .practice_lists:hover::after {
@@ -55,20 +56,19 @@
 
 .practice_lists h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 27px;
+    font-size: 50px;
     padding: 5px;
 }
 
 .practice_lists h4 {
     font-size: 17px;
-    padding: 5px;
     color: rgb(183, 121, 33);
 }
 
 .practice_info {
     display: grid;
     grid-template-rows: repeat(5, auto);
-    padding: 15px;
+    padding: 1vh;
 }
 
 .practice_info a {
@@ -91,10 +91,158 @@
 .call_to_button_2-2 {
     text-decoration-line: none;
     padding: 15px;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.4);
+    transition: 0.2s ease;
     border: 3px solid white;
     cursor: pointer;
     color: white;
+    position: relative;
+    -webkit-animation: button-bounce 2200ms forwards infinite cubic-bezier(0.165, 0.84, 0.44, 1);
+    -moz-animation: button-bounce 2200ms forwards infinite cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation: button-bounce 2200ms forwards infinite cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-transition: background-color 0.2s ease;
+    -moz-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+}
+
+.call_to_button_2-2:hover {
+    background-color: rgba(183, 121, 33, 0.4);
+    color: white;
+}
+
+.call_to_button_2-2:hover>.fa-comments {
+    color: white;
+}
+
+.call_to_button_2-2:focus {
+    outline: none;
+}
+
+.call_to_button_2-2:after {
+    background-color: rgba(183, 121, 33, 1);
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    -webkit-animation: button-blip 2200ms forwards infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+    -moz-animation: button-blip 2200ms forwards infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation: button-blip 2200ms forwards infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.call_to_button_2-2:hover:after {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: transparent;
+}
+
+@-webkit-keyframes button-bounce {
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(0.96);
+    }
+    20% {
+        transform: scale(1.04);
+    }
+    52%,
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes button-bounce {
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(0.96);
+    }
+    20% {
+        transform: scale(1.04);
+    }
+    52%,
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes button-bounce {
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(0.96);
+    }
+    20% {
+        transform: scale(1.04);
+    }
+    52%,
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes button-blip {
+    0% {
+        transform: scaleX(1) scaleY(1);
+        opacity: 0;
+    }
+    10% {
+        transform: scaleX(1) scaleY(1);
+        opacity: .7;
+    }
+    30%,
+    99% {
+        transform: scaleX(1.08) scaleY(1.35);
+        opacity: 0;
+    }
+    100% {
+        transform: scaleX(1) scaleY(1);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes button-blip {
+    0% {
+        transform: scaleX(1) scaleY(1);
+        opacity: 0;
+    }
+    10% {
+        transform: scaleX(1) scaleY(1);
+        opacity: .7;
+    }
+    30%,
+    99% {
+        transform: scaleX(1.08) scaleY(1.35);
+        opacity: 0;
+    }
+    100% {
+        transform: scaleX(1) scaleY(1);
+        opacity: 0;
+    }
+}
+
+@keyframes button-blip {
+    0% {
+        transform: scaleX(1) scaleY(1);
+        opacity: 0;
+    }
+    10% {
+        transform: scaleX(1) scaleY(1);
+        opacity: .7;
+    }
+    30%,
+    99% {
+        transform: scaleX(1.08) scaleY(1.35);
+        opacity: 0;
+    }
+    100% {
+        transform: scaleX(1) scaleY(1);
+        opacity: 0;
+    }
 }
 
 .fa-comments {
@@ -102,10 +250,9 @@
 }
 
 .sponsors {
-    padding: 90px;
+    margin-top: 5vw;
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-    align-items: stretch;
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 3fr));
+    align-items: center;
 }

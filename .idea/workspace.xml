@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1fc6ef7-6cc8-484e-95eb-1cdd756cd5fa" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/domasna/Php/c3/c3.html" afterPath="$PROJECT_DIR$/domasna/Php/c3/c3.html" />
-      <change beforePath="$PROJECT_DIR$/domasna/Php/c3/upload.php" afterPath="$PROJECT_DIR$/domasna/Php/c3/upload.php" />
+      <change beforePath="$PROJECT_DIR$/Lawyers/assets/css/employer_template.css" afterPath="$PROJECT_DIR$/Lawyers/assets/css/employer_template.css" />
+      <change beforePath="$PROJECT_DIR$/Lawyers/assets/css/index.css" afterPath="$PROJECT_DIR$/Lawyers/assets/css/index.css" />
+      <change beforePath="$PROJECT_DIR$/Lawyers/assets/css/slider.css" afterPath="$PROJECT_DIR$/Lawyers/assets/css/slider.css" />
+      <change beforePath="$PROJECT_DIR$/Lawyers/index.html" afterPath="$PROJECT_DIR$/Lawyers/index.html" />
+      <change beforePath="$PROJECT_DIR$/Lawyers/index.js" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,7 +24,7 @@
         <entry file="file://$PROJECT_DIR$/domasna/Php/c3/c3.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+              <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -83,8 +85,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -114,6 +114,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -160,15 +162,15 @@
       <workItem from="1519329913167" duration="1286000" />
       <workItem from="1519466320932" duration="564000" />
       <workItem from="1519466897117" duration="845000" />
+      <workItem from="1520519880978" duration="20000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4396000" />
+    <option name="totallyTimeSpent" value="4416000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12486828" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -200,6 +202,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/domasna/Php/c3/c3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/domasna/Php/c3/c3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -260,7 +270,7 @@
     <entry file="file://$PROJECT_DIR$/domasna/Php/c3/c3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
           <folding />
         </state>
       </provider>

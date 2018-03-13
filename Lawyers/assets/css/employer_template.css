@@ -2,25 +2,24 @@
 
 .employers_container {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
     grid-template-rows: 100%;
-    width: 80%;
+    max-width: 80%;
     margin: 10vh auto;
 }
 
 .template_text {
-    padding: 15px;
+    padding: 2rem;
 }
 
 .template_text h5 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 4vh;
 }
 
 .template_text p {
-    padding: 5vh 15px;
-    text-indent: 1vw;
     line-height: 1.5;
+    margin: 2vh auto;
 }
 
 .contact_person {
@@ -31,41 +30,47 @@
 
 .contact_person span:last-child {
     color: rgb(183, 121, 33);
+    margin-top: 10px;
 }
 
 
 /* left template */
 
-.left_template {
+.left_template,
+.right_template {
     display: grid;
-    grid-template-columns: 33% 67%;
-    text-align: left;
-    border-right: 1px solid gray;
+    margin: 3vh;
+    box-shadow: 0 5px 10px rgba(128, 128, 128, 0.4);
+    border-radius: 44px;
 }
 
-.employer1_img {
-    background: url("../pictures/employers/person1_small.png"), rgb(183, 121, 33);
-    background-repeat: no-repeat;
-    height: 250px;
-    width: 250px;
-    border: 1px solid black;
-    border-radius: 50%;
+.left_template {
+    grid-template-columns: 33% 67%;
+    text-align: left;
 }
 
 
 /* right template */
 
 .right_template {
-    display: grid;
     grid-template-columns: 67% 33%;
     text-align: right;
 }
 
+.employer1_img,
+.employer2_img {
+    background-repeat: no-repeat;
+    height: auto;
+    max-width: 250px;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.employer1_img {
+    background: url("../pictures/employers/person1_small.png"), rgb(183, 121, 33);
+}
+
 .employer2_img {
     background: url("../pictures/employers/person2_small.png"), rgb(183, 121, 33);
-    background-repeat: no-repeat;
-    height: 250px;
-    width: 250px;
-    border: 1px solid black;
-    border-radius: 50%;
 }
