@@ -40,8 +40,21 @@
 .right_template {
     display: grid;
     margin: 3vh;
+    max-height: 270px;
     box-shadow: 0 5px 10px rgba(128, 128, 128, 0.4);
-    border-radius: 44px;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 1641px) {
+    .employers_container {
+        margin: 5vh auto;
+        grid-template-columns: repeat(1, auto);
+    }
+    .employer1_img,
+    .employer2_img {
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .left_template {
@@ -60,7 +73,7 @@
 .employer1_img,
 .employer2_img {
     background-repeat: no-repeat;
-    height: auto;
+    max-height: 270px;
     max-width: 250px;
     border: 1px solid black;
     border-radius: 6px;

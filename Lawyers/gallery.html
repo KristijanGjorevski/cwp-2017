@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gallery</title>
     <link rel="stylesheet" type="text/css" href="assets/fonts/fonts.css">
@@ -14,13 +14,47 @@
 
 <body>
     <header>
-        <div class="logo">
-            <span class="logo_text">Lawyer</span>
-            <figure>
-                <img src="logo1.png" alt="logo">
-            </figure>
-            <span class="caption">Personal injury attorney</span>
-            <span class=logo_text>Attorney</span>
+        <nav id="nav-list_mobile">
+            <a class="icon_drop">
+                <div id="mobile_icon">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </a>
+            <ul id="mobile-menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">About us</a>
+                </li>
+                <li>
+                    <a href="#">Attorneys</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Practice Areas</a>
+                </li>
+                <li>
+                    <a href="gallery.html" class="focus">Gallery</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="logo">
+            <a href="index.html">
+                <span class="logo_text">Lawyer</span>
+                <figure>
+                    <img src="logo1.png" alt="logo">
+                </figure>
+                <span class="caption">Personal injury attorney</span>
+                <span class="logo_text">Attorney</span>
+            </a>
         </div>
         <nav class="nav-meni">
             <ul class="nav-list">
@@ -47,8 +81,9 @@
                 </li>
             </ul>
         </nav>
+
         <div class="call-action">
-            <span>call us: <a href="#" class="contact_numb">+389-71-308-148</a></span>
+            <span>call us: <a href="contact.html" class="contact_numb">+389-71-308-148</a></span>
             <button class="call_to_button_1-2">Request a free consultation</button>
         </div>
     </header>
@@ -77,13 +112,15 @@
     </div>
     <footer>
         <span>Copyright © 2018 <a href="#">Lawyers & Attorneys</a> all rights owned. Page by Kristijan</span>
-        <div class="logo">
-            <span class="logo_text">Lawyer</span>
-            <figure>
-                <img src="logo1.png" alt="logo">
-            </figure>
-            <span class="caption">Personal injury attorney</span>
-            <span class="logo_text">Attorney</span>
+        <div id="logo">
+            <a href="index.html">
+                <span class="logo_text">Lawyer</span>
+                <figure>
+                    <img src="logo1.png" alt="logo">
+                </figure>
+                <span class="caption">Personal injury attorney</span>
+                <span class="logo_text">Attorney</span>
+            </a>
         </div>
         <div class="social_media">
             <a href="#"><i class="fab fa-facebook"></i></a>
@@ -92,6 +129,7 @@
         </div>
     </footer>
     <script type="text/javascript" src="assets/javascript/gallery.js"></script>
+    <script src="assets/javascript/mobile.js"></script>
 </body>
 
 </html>

@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1fc6ef7-6cc8-484e-95eb-1cdd756cd5fa" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Lawyers/assets/css/employer_template.css" afterPath="$PROJECT_DIR$/Lawyers/assets/css/employer_template.css" />
+      <change beforePath="$PROJECT_DIR$/Lawyers/assets/css/contact.css" afterPath="$PROJECT_DIR$/Lawyers/assets/css/contact.css" />
       <change beforePath="$PROJECT_DIR$/Lawyers/assets/css/index.css" afterPath="$PROJECT_DIR$/Lawyers/assets/css/index.css" />
-      <change beforePath="$PROJECT_DIR$/Lawyers/assets/css/slider.css" afterPath="$PROJECT_DIR$/Lawyers/assets/css/slider.css" />
-      <change beforePath="$PROJECT_DIR$/Lawyers/index.html" afterPath="$PROJECT_DIR$/Lawyers/index.html" />
-      <change beforePath="$PROJECT_DIR$/Lawyers/index.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Lawyers/assets/css/practice.css" afterPath="$PROJECT_DIR$/Lawyers/assets/css/practice.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,6 +45,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/wape/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
@@ -114,8 +115,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -163,11 +164,12 @@
       <workItem from="1519466320932" duration="564000" />
       <workItem from="1519466897117" duration="845000" />
       <workItem from="1520519880978" duration="20000" />
+      <workItem from="1520968573586" duration="38000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4416000" />
+    <option name="totallyTimeSpent" value="4454000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -202,6 +204,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/domasna/Php/c3/c3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/domasna/Php/c3/c3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">

@@ -2,7 +2,7 @@ function initMap() {
 
     //map options
     let options = {
-        zoom: 10,
+        zoom: 8,
         center: {
             lat: 42.3601,
             lng: 71.0589
@@ -26,56 +26,37 @@ function initMap() {
     });
 
     function changeLoc() {
-        console.log(this.id);
+        // console.log(this.id);
         switch (this.id) {
             case "NY":
-                map.setZoom(18);
-                map.setCenter(new google.maps.LatLng(40.7061, -70.9495));
+                map.setZoom(11);
+                map.setCenter(new google.maps.LatLng(markers[0].coords.lat, markers[0].coords.lng));
                 map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
                 break;
             case "CA":
-                map.setZoom(18);
-                map.setCenter(new google.maps.LatLng(37.7828, -122.4111));
+                map.setZoom(11);
+                map.setCenter(new google.maps.LatLng(markers[1].coords.lat, markers[1].coords.lng));
                 map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
                 break;
             case "FL":
-                map.setZoom(18);
-                map.setCenter(new google.maps.LatLng(28.5503, -81.3113));
+                map.setZoom(11);
+                map.setCenter(new google.maps.LatLng(markers[2].coords.lat, markers[2].coords.lng));
                 map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
                 break;
             default:
-                map.setZoom(18);
-                map.setCenter(new google.maps.LatLng(38.166690, -85.681349));
+                map.setZoom(11);
+                map.setCenter(new google.maps.LatLng(markers[3].coords.lat, markers[3].coords.lng));
                 map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
                 break;
         }
     }
 
-    /*
-    //add marker
-    let marker = new google.maps.Marker({
-        position: {
-            lat: 42.4668,
-            lng: -70.9495
-        },
-        icon: "",
-        draggable: true,
-        map: map
-    });
 
-    var infoWindow = new google.maps.InfoWindow({
-        content: "<h1>Lawyer & Attorney</h1>"
-    });
-
-    marker.addListener("click", function() {
-        infoWindow.open(map, marker);
-    });
-    */
     //Array of markers
     let markers = [{
         coords: {
-            lat: 40.7061,
-            lng: -70.9495
+            lat: 40.730610,
+            lng: -73.935242
         }
     }, {
         coords: {
@@ -95,6 +76,7 @@ function initMap() {
             lng: -85.681349
         }
     }];
+    //console.log(markers[0].coords.lat);
 
     //loop
     for (let i = 0; i < markers.length; i++) {
