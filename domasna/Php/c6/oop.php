@@ -34,7 +34,7 @@ $persarr = [
     ]
 ];
 
-class Person{
+class User{
 
     private $name;
     private $lastName;
@@ -88,7 +88,7 @@ class Person{
 foreach ($persarr as $value) {
     //echo '<pre>'; print_r($value); echo '</pre>';
 
-  $person[] = new Person($value["name"],$value["lastname"],$value["password"],$value["email"]);
+  $person[] = new User($value["name"],$value["lastname"],$value["password"],$value["email"]);
   echo "<br/>Person with name : ".$value["name"];  
 }
 
@@ -141,26 +141,25 @@ class Automobile {
     }
 
     public function accelerate(){
-        if($speed > 100 ){
-
+        if(Self::$speed == 100 ){
             echo "max speed";
-
         }else{
-            while($speed < 100) {
-                echo "The speed is: $speed <br/>";
-                $speed++;
+            while(Self::$speed <= 100) {
+                echo "The speed is: ".Self::$speed." <br/>";
+                ++self::$speed;
+
             } 
         }
     }
 
     public function breaking() {
 
-       if($speed <= 0){
+       if(Self::$speed == 0){
             echo "car stopped";
        }else{
-           while ($speed > 0) {
-               echo "The speed is: $speed <br/>";
-               $speed--;
+           while (Self::$speed >= 0) {
+               echo "The speed is: ".Self::$speed." <br/>";
+               --self::$speed;
            }
        }
     }
@@ -170,6 +169,35 @@ class Automobile {
 $merdzo = new Automobile("Mercedes","silver","gasoline");
 
 echo "<br/>".$merdzo->accelerate();
+
+echo "<br/>".$merdzo->breaking();
+
+
+
+class Person {
+    public $isAlive = true;
+    
+    function __construct($name) {
+        $this->name = $name;
+    }
+    
+    public function dance() {
+      return "I'm dancing!";
+    }
+  }
+  
+  $me = new Person("Shane");
+  if (is_a($me, "Person")) {
+    echo "I'm a person, ";
+  }
+  if (property_exists($me, "name")) {
+    echo "I have a name, ";
+  }
+  if (method_exists($me, "dance")) {
+    echo "and I know how to dance!";
+  }
+
+
 
 ?>
 
