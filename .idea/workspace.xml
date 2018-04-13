@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1fc6ef7-6cc8-484e-95eb-1cdd756cd5fa" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Lawyers/assets/css/contact.css" afterPath="$PROJECT_DIR$/Lawyers/assets/css/contact.css" />
+      <change beforePath="$PROJECT_DIR$/Lawyers/assets/css/employer_template.css" afterPath="$PROJECT_DIR$/Lawyers/assets/css/employer_template.css" />
       <change beforePath="$PROJECT_DIR$/Lawyers/assets/css/index.css" afterPath="$PROJECT_DIR$/Lawyers/assets/css/index.css" />
       <change beforePath="$PROJECT_DIR$/Lawyers/assets/css/practice.css" afterPath="$PROJECT_DIR$/Lawyers/assets/css/practice.css" />
+      <change beforePath="$PROJECT_DIR$/Lawyers/assets/css/slider.css" afterPath="$PROJECT_DIR$/Lawyers/assets/css/slider.css" />
+      <change beforePath="$PROJECT_DIR$/Lawyers/blog.html" afterPath="$PROJECT_DIR$/Lawyers/blog.html" />
+      <change beforePath="$PROJECT_DIR$/Lawyers/contact.html" afterPath="$PROJECT_DIR$/Lawyers/contact.html" />
+      <change beforePath="$PROJECT_DIR$/Lawyers/gallery.html" afterPath="$PROJECT_DIR$/Lawyers/gallery.html" />
+      <change beforePath="$PROJECT_DIR$/Lawyers/index.html" afterPath="$PROJECT_DIR$/Lawyers/index.html" />
+      <change beforePath="$PROJECT_DIR$/domasna/Php/c6/oop.php" afterPath="$PROJECT_DIR$/domasna/Php/c6/oop.php" />
+      <change beforePath="$PROJECT_DIR$/nevladina/v1/assets/css/index.css" afterPath="$PROJECT_DIR$/nevladina/v1/assets/css/index.css" />
+      <change beforePath="$PROJECT_DIR$/nevladina/v1/index.html" afterPath="$PROJECT_DIR$/nevladina/v1/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -115,8 +123,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -165,14 +173,16 @@
       <workItem from="1519466897117" duration="845000" />
       <workItem from="1520519880978" duration="20000" />
       <workItem from="1520968573586" duration="38000" />
+      <workItem from="1521895396498" duration="26000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4454000" />
+    <option name="totallyTimeSpent" value="4480000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12486828" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -204,6 +214,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/domasna/Php/c3/c3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/domasna/Php/c3/c3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">

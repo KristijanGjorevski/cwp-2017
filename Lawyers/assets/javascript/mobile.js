@@ -11,10 +11,10 @@ mobileDropMenu.addEventListener("click", function mobileButton() {
 
     if (this.classList.value == "change") {
         menuToggle.style.display = "grid";
-        document.body.style.overflow = "hidden";
 
     } else {
         menuToggle.style.display = "none";
+
     }
 
 

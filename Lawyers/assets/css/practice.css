@@ -88,6 +88,18 @@
     margin: 25px auto;
 }
 
+@media only screen and (max-width: 660px) {
+    .call_to_container {
+        transform: scale(0.7);
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .call_to_container {
+        transform: scale(0.5);
+    }
+}
+
 .call_to_button_2-2 {
     text-decoration-line: none;
     padding: 15px;

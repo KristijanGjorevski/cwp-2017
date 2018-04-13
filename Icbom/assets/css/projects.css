@@ -1,0 +1,43 @@
+.projects_container {
+    width: 80%;
+    margin: 10vh auto 10vh auto;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+    grid-row-gap: 3vh;
+}
+
+.projects_template {
+    display: grid;
+    grid-template-columns: minmax(auto, 400px) auto;
+    background-color: #f5f5f5;
+    box-shadow: 2px 7px 11px 3px rgba(0, 0, 0, 0.1);
+}
+
+.projects_template img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.img_container {
+    max-width: 400px;
+    max-height: 250px;
+    height: auto;
+    display: inline-block;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.post_content {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-size: 1.1em; */
+    padding: 0 30px;
+}
+
+.post_content h2 {
+    font-size: 1.5em;
+}

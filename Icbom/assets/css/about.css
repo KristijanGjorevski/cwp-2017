@@ -1,0 +1,57 @@
+.background {
+    background: url("../pictures/2.jpg")center;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 45% auto;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 80%;
+    height: auto;
+    background: #fafaff;
+    margin: 10vh auto 10vh auto;
+}
+
+.mission {
+    padding: 15px;
+}
+
+.mission h3 {
+    font-size: 1.6em;
+}
+
+.mission ol li {
+    /* Text color */
+    color: rgba(28, 51, 103, 1);
+    list-style-type: none;
+    padding: 0.4em;
+}
+
+.mission ol li:before {
+    /* Unicode bullet symbol */
+    content: '\2022 ';
+    /* Bullet color */
+    color: rgba(28, 51, 103, 1);
+    padding-right: 0.5em;
+}
+
+.slide_container {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.slide_container img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}

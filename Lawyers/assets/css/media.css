@@ -1,0 +1,29 @@
+@media only screen and (max-width: 660px) {
+    .call_to_container {
+        width: 2vw;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .call_to_button_1-2 {
+        display: none;
+    }
+    .call-action {
+        font-size: smaller;
+    }
+    .call-action>span>span {
+        display: none;
+    }
+    .call-action>span>a {
+        white-space: nowrap;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .logo_text {
+        display: none;
+    }
+    .caption {
+        display: none;
+    }
+}

@@ -2,10 +2,10 @@
 
 .employers_container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     grid-template-rows: 100%;
     max-width: 80%;
-    margin: 10vh auto;
+    margin: 7vh auto;
 }
 
 .template_text {
@@ -45,20 +45,52 @@
     border-radius: 6px;
 }
 
-@media screen and (max-width: 1641px) {
-    .employers_container {
-        margin: 5vh auto;
-        grid-template-columns: repeat(1, auto);
+@media only screen and (min-width: 650px) {
+    .left_template {
+        grid-template-columns: minmax(230px, 33%) 66%;
     }
-    .employer1_img,
-    .employer2_img {
-        height: 100%;
-        width: 100%;
+    .right_template {
+        grid-template-columns: minmax(230px, 66%) 33%;
     }
 }
 
+@media screen and (max-width: 1521px) {
+    .employers_container {
+        margin: 5vh auto;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1245px) {
+    .employers_container {
+        margin: 5vh auto;
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .contact_person>span {
+        font-size: 20px;
+    }
+    .employers_container {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .left_template,
+    .right_template {
+        grid-template-rows: repeat(2, minmax(min-content, max-content));
+    }
+}
+
+.employer1_img,
+.employer2_img {
+    width: 100%;
+}
+
 .left_template {
-    grid-template-columns: 33% 67%;
+    align-self: left;
     text-align: left;
 }
 
@@ -66,7 +98,7 @@
 /* right template */
 
 .right_template {
-    grid-template-columns: 67% 33%;
+    align-self: right;
     text-align: right;
 }
 

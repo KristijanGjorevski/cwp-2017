@@ -187,6 +187,7 @@ class Person {
   }
   
   $me = new Person("Shane");
+  
   if (is_a($me, "Person")) {
     echo "I'm a person, ";
   }
@@ -196,6 +197,75 @@ class Person {
   if (method_exists($me, "dance")) {
     echo "and I know how to dance!";
   }
+
+
+
+
+  }
+class Weapon {
+    protected $model;
+    protected $bulletType;
+    protected $manufacturer;
+    protected $max_num_bullets;
+    protected $current_number_bullets;
+
+    function reload(){
+        $this->current_number_bullets = $this->max_num_bullets;
+    }
+
+    function shoot(){
+        if($this->current_number_bullets == 0){
+            //cannot shoot - must reload
+        } else{
+            $this->current_number_bullets--;
+        }
+    }
+}
+
+
+class Shotgun extends Weapon{
+    
+    private $bulletType = "Gauges";
+    private static $number;
+    public function __construct($modelType){
+        $selection = ["KS-23" => ['man' => "Soviet Union",
+                                  'no_bul'=> '6',
+                                  'bul_type'=>'shell']
+                
+        ,"MAG-7" => "South Africa","Mossberg 930" => "United States" ,"Benelli M3" => "Italy"];
+
+        if(array_key_exists($modelType,$selection)){
+
+        $this->model = $modelType;
+        $this->manufacturer = $selection[$modelType]['man'];
+        $this->max_num_bullets = $selection[$modelType]['no_bul'];
+        $this->bulletType = $selection[$modelType]['bul_type'];
+
+
+        echo self::$number." of ".__CLASS__." created";
+            self::$number++;
+    }
+}
+
+$shutg = new Shotgun('KS-23');
+$shutg->max
+
+
+class SMG extends Weapon{
+
+}
+class SR extends Weapon{
+
+}
+class AR extends Weapon{
+
+}
+class Knife extends Weapon{
+
+}
+
+
+
 
 
 
