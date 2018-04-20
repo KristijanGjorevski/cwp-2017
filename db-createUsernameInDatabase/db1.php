@@ -1,82 +1,63 @@
-<?php
-echo "test";
-
+<?php 
 
 $username = "root";
-$password = "";
+$password = "OXdPv08m04RhO6Cg";
 $host = "127.0.0.1";
-$dbname = "blog";
+$db_name =  "blog";
 
-// data source name - dsn
-$dsn = "mysql:host=".$host.";dbname=".$dbname;
+// dsn
+$dsn = "mysql:host={$host};dbname={$db_name};";
 
-// PDO - php data object
+//create PDO
+$db = new PDO($dsn,$username,$password);
 
+$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE,PDO::FETCH_OBJ);
 
-$DB = new PDO($dsn, $username, $password);
+?>
 
-$isValid = isset($_POST["firstname"])
-	&& $_POST["firstname"] != ""
-	&&	isset($_POST["lastname"])
-	&& $_POST["lastname"] != ""
-	&&	isset($_POST["email"])
-	&& $_POST["email"] != ""
-	&&	isset($_POST["password"])
-	&& $_POST["password"] != "";
+<form action="db1.php" method="POST">
+	<input type="text" name="firstname" placeholder="firstname">
+	<input type="text" name="lastname" placeholder="lastname">
+	<input type="email" name="email" placeholder="email">
+	<input type="password" name="password" placeholder="password">
+	<input type="password2" name="password2" placeholder="repeat password">
+	<button type="submit">Register</button>
+</form>
 
-	if ($isValid) {
-		$sql = "insert into users (firstname, lastname, email, password) values (:firstname, :lastname, :email, :password)";
+<?php 
+
 	
-		$query = $DB->prepare($sql);
+		
+	if(isset($_POST["firstname"]) && isset($_POST["email"]) && isset($_POST["password"])){
 
-		$query->bindValue(":firstname", $_POST["firstname"], PDO::PARAM_STR);
-		$query->bindValue(":lastname", $_POST["lastname"], PDO::PARAM_STR);
-		$query->bindValue(":email", $_POST["email"], PDO::PARAM_STR);
-		$query->bindValue(":password", $_POST["password"], PDO::PARAM_STR);
+		$firstname = trim($_POST["firstname"]);
+		$lastname = trim($_POST["lastname"]);
+		$email = trim($_POST["email"]);
+		$password = trim($_POST["password"]);
+		$confirm_pass = trim($_POST["password2"]);
+	
+		$firstname = filter_var($firstname,FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_LOW);
+		$email = filter_var($email,FILTER_SANITIZE_EMAIL);
+		
+			if($password == $confirm_pass){
+				$password = filter_var($password,FILTER_SANITIZE_STRING,FILTER_FLAG_STRIP_LOW);
+			} else { echo "Passwords don't match, they need to be exact<br>";}
 
+
+		$sql = "INSERT INTO users (firstname,lastname,email,password) VALUES (:firstname,:lastname,:email,:password)";
+
+		$query = $db->prepare($sql);
+		$query->bindValue(":firstname",$firstname,PDO::PARAM_STR);
+		$query->bindValue(":lastname",$lastname,PDO::PARAM_STR);
+		$query->bindValue(":email",$email,PDO::PARAM_STR);
+		$query->bindValue(":password",$password,PDO::PARAM_STR);
+	   
 		$query->execute();
+	
+		echo "User has been registered with fullname: {$firstname} {$lastname}, email: {$email}, password: {$password}.";
 	}
 
-/*print_r($DB);*/
+		
 
-$sql = "select * from users";
-$query = $DB->query($sql);
-$query->execute();
 
-/*echo "<pre>";
-print_r($query->fetchAll(PDO::FETCH_ASSOC));
-echo "</pre>";
-*/
-$res = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
-	<form method="POST" autocomplete="off">
-		<input type="text" name="firstname" placeholder="firstname" autocomplete="false">
-		<input type="text" name="lastname" placeholder="lastname" autocomplete="false">
-		<input type="email" name="email" placeholder="email" autocomplete="false">
-		<input type="password" name="password" placeholder="password" autocomplete="false">
-		<button type="submit"> Save </button>
-	</form>
-
-	<table>
-		<tr>
-			<th>id</th>
-			<th>lastname</th>
-			<th>email</th>
-			<th>avatar</th>
-			<th>password</th>
-		</tr>
-
-		<?php //echo "<pre>"; print_r($res); echo "</pre>"; ?>
-<?php foreach ($res as $value) { ?>
-
-		<tr>
-			<td><?=$value["id"]?></td>
-			<td><?=$value["lastname"]?></td>
-			<td><?=$value["email"]?></td>
-			<td><?=$value["avatar"]?></td>
-			<td><?=$value["password"]?></td>
-		</tr>
-
-<?php } ?>
-
-	</table>

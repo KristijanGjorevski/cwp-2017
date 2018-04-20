@@ -56,3 +56,69 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#modal_box {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(40, 79, 139, 0.6);
+}
+
+#modal_content {
+    margin: 15vh auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+}
+
+#img {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+}
+
+#title {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+    height: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.11rem;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.1)
+    }
+    to {
+        transform: scale(1)
+    }
+}
