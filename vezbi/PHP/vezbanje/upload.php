@@ -2,7 +2,7 @@
 
     if(isset($_POST["submit"])){
 
-        $file = $_FILES["file"]["name"];
+        $file = $_FILES["image"];
 
         echo '<pre>'; print_r($file); echo '</pre>';
         
@@ -12,3 +12,8 @@
     }
 
 ?>
+
+<form method="POST" enchtype="multipart/form-data">
+<input type="file" name="image">
+<input type="submit" placeholder="submit">
+</form>

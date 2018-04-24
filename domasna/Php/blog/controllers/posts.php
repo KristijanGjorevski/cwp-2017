@@ -11,8 +11,8 @@ if($isValid) {
 		'content' => 			$_POST['content'],
 		'publish_date' => 		$_POST['publish_date'],
 		'uid' => 				$_POST['uid'],
-		'image' => 				$_POST['image'],
-		'image_thumbnail' => 	$_POST['image_thumbnail'],
+		'image' => 				$_POST['image']
+		// 'image_thumbnail' => 	$_POST['image_thumbnail']
 	];
 	add_blog_post($data);
 }

@@ -1,5 +1,6 @@
 <?php 
 include_once('../config/db.php');
+
 function get_blog_posts(){
 	$sql = 'select * from posts';
 	$query = DB::Get()->query($sql);
@@ -9,6 +10,7 @@ function get_blog_posts(){
 function add_blog_post($data){
 	$sql = 'insert into posts (title, permalink, content, publish_date, uid, image, image_thumbnail) values (:title, :permalink, :content, :publish_date, :uid, :image, :image_thumbnail)';
 	$query = DB::Get()->prepare($sql);
+
 	$query->bindValue(':title', 			$data['title'], 			PDO::PARAM_STR);
 	$query->bindValue(':permalink', 		$data['permalink'], 		PDO::PARAM_STR);
 	$query->bindValue(':content', 			$data['content'], 			PDO::PARAM_STR);
@@ -18,4 +20,5 @@ function add_blog_post($data){
 	$query->bindValue(':image_thumbnail', 	$data['image_thumbnail'], 	PDO::PARAM_STR);
 	$query->execute();
 }
+
 ?>
