@@ -1,0 +1,20 @@
+@media screen and (max-width: 665px) {
+    .info p {
+        font-size: 1rem;
+    }
+    .nav-meni {
+        display: none;
+    }
+    #nav-list_mobile {
+        display: block;
+    }
+    #mobile_icon {
+        display: block;
+    }
+    .nav-meni li {
+        width: 100%;
+        padding: 12px 0;
+    }
+}
+
+@media screen and (max-width: 405px) {}
