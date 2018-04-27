@@ -172,12 +172,11 @@ header {
     height: 100%;
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-column-gap: 8vw;
-    grid-row-gap: 8vh;
+    grid-row-gap: 2vh;
     text-align: center;
     align-content: center;
     background-color: lightyellow;
-    z-index: 1;
+    z-index: 9999;
     left: 0;
     top: 0;
     background-color: rgba(0, 0, 0, 0.9);
@@ -339,7 +338,7 @@ header {
 
 .slide1 .call_to_button {
     bottom: 15%;
-    left: 30%;
+    left: 50%;
 }
 
 .slide1 .slide-content>h2 {
@@ -368,7 +367,7 @@ header {
 /*                                          Slider 2 content position                                                   */
 
 .slide2 .call_to_button {
-    bottom: 42%;
+    bottom: 15%;
     left: 50%;
 }
 
@@ -399,7 +398,7 @@ header {
 
 .slide3 .call_to_button {
     bottom: 15%;
-    right: 30%;
+    left: 50%;
 }
 
 .slide3 .slide-content>h2 {
@@ -427,13 +426,13 @@ header {
 
 .slide-content h2 {
     position: absolute;
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
 }
 
 .slide-content span {
     position: absolute;
-    font-size: 18px;
+    font-size: 1rem;
     padding: 25px;
     width: 40vw;
     color: white;
@@ -659,14 +658,14 @@ header {
 .main-nav>ol {
     list-style-type: none;
     display: grid;
-    grid-gap: 5%;
-    z-index: 9999;
-    width: 40%;
+    grid-gap: 2vw;
+    z-index: 2;
+    width: 100vw;
     height: auto;
     position: absolute;
-    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    grid-template-columns: repeat(3, minmax(127px, 200px));
     top: -80px;
-    right: 30%;
+    justify-content: center;
 }
 
 .main-nav>ol li {
@@ -776,20 +775,6 @@ header {
     margin: auto;
 }
 
-@media only screen and (max-width: 1400px) {
-    .posts_templates {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 1055px) {
-    .posts_templates {
-        grid-template-columns: repeat(auto-fit, minmax(51%, 1fr));
-        width: 50%;
-        grid-row-gap: 3vh;
-    }
-}
-
 .posts_container {
     margin: auto 3vw;
     max-height: auto;
@@ -833,7 +818,7 @@ header {
 .about_us {
     display: grid;
     grid-template-rows: 10% auto;
-    grid-gap: 125px;
+    grid-gap: 10vh;
     background: url("../pictures/background.png") no-repeat center;
     height: auto;
     width: 100%;
@@ -846,7 +831,7 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(231px, 1fr));
     grid-gap: 10%;
     justify-items: center;
-    width: 60%;
+    width: 60vw;
     margin: auto;
 }
 

@@ -27,6 +27,7 @@
 .contact_form textarea {
     display: block;
     width: 25vw;
+    min-width: 100%;
 }
 
 .contact_form input {

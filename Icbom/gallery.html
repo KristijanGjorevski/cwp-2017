@@ -8,6 +8,7 @@
     <title>Gallery</title>
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/gallery.css">
+    <link rel="stylesheet" href="assets/css/medias.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 
@@ -20,45 +21,59 @@
         </div>
         <form method="GET" class="lang_form">
             <label class="lang-opt">
-                            <input type="radio" name="language" value="MK">
-                            <img class="language flags" src="assets/pictures/icons/macedonia.svg" alt="Language-MK">
-                        </label>
+                    <input type="radio" name="language" value="MK">
+                    <img class="language flags" src="assets/pictures/icons/macedonia.svg" alt="Language-MK">
+                </label>
 
             <label class="lang-opt">
-                            <img class="language flags" src="assets/pictures/icons/united-states.svg" alt="Language-US">
-                            <input type="radio" name="language" value="US">
-                        </label>
+                    <img class="language flags" src="assets/pictures/icons/united-states.svg" alt="Language-US">
+                    <input type="radio" name="language" value="US">
+                </label>
         </form>
         <nav class="head-nav">
             <ul class="nav-meni">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About us</a>
                     <!-- <ul class="opt-list">
-                                <li><a href="#">Organisation</a></li>
-                                <li><a href="#">Honorary members</a></li>
-                                <li><a href="#">Members</a></li>
-                                <li><a href="#">Apprentices</a></li>
-                                <li><a href="#">Publication</a></li>
-                            </ul> -->
+                        <li><a href="#">Organisation</a></li>
+                        <li><a href="#">Honorary members</a></li>
+                        <li><a href="#">Members</a></li>
+                        <li><a href="#">Apprentices</a></li>
+                        <li><a href="#">Publication</a></li>
+                    </ul> -->
                 </li>
-                <li><a href="#">Trainings</a>
-                    <!-- <ul class="opt-list">
-                                <li><a href="#">Professional training for performing private security work</a></li>
-                                <li><a href="#">Basic analytics and security data measures</a></li>
-                                <li><a href="#">Courses for foreign languages</a></li>
-                            </ul> -->
-                </li>
+                <!-- <ul class="opt-list">
+                        <li><a href="#">Professional training for performing private security work</a></li>
+                        <li><a href="#">Basic analytics and security data measures</a></li>
+                        <li><a href="#">Courses for foreign languages</a></li>
+                    </ul> -->
                 <li><a href="projects.html">Projects</a>
                     <!-- <ul class="opt-list">
-                                <li><a href="#">Youth education with security</a></li>
-                                <li><a href="#">Terrorist and organized crime</a></li>
-                                <li><a href="#">Resolution security</a></li>
-                                <li><a href="#">Investigative activity</a></li>
-                            </ul> -->
+                        <li><a href="#">Youth education with security</a></li>
+                        <li><a href="#">Terrorist and organized crime</a></li>
+                        <li><a href="#">Resolution security</a></li>
+                        <li><a href="#">Investigative activity</a></li>
+                    </ul> -->
                 </li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <nav id="nav-list_mobile">
+                <a class="icon_drop">
+                    <div id="mobile_icon">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </a>
+                <ul id="mobile-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </nav>
     </header>
     <main>
@@ -191,6 +206,7 @@
         </div>
     </footer>
     <script src="assets/javascript/gallery.js"></script>
+    <script src="assets/javascript/menu.js"></script>
 </body>
 
 </html>

@@ -1,12 +1,12 @@
 .gallery {
-    width: 80%;
+    width: 80vw;
     margin: 10vh auto 10vh auto;
 }
 
 .gallery_template {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
+    grid-gap: 2vh 2vw;
 }
 
 .gallery_template figure {

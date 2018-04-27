@@ -3,8 +3,8 @@
 }
 
 .about {
-    display: grid;
-    grid-template-columns: 45% auto;
+    display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 80%;
