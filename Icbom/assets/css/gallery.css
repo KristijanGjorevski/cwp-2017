@@ -36,7 +36,8 @@
 
 .gallery_template figcaption {
     color: white;
-    font-size: 20px;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     position: absolute;
     bottom: 2%;
