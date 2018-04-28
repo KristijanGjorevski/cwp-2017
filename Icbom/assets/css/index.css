@@ -89,10 +89,9 @@ header form {
     position: relative;
 }
 
-.nav-meni>li:hover,
-.nav-meni>li:active {
+.nav-meni>li a:hover,
+.nav-meni>li a:active {
     background-color: rgba(255, 255, 255, 0.2);
-    cursor: pointer;
     color: white;
 }
 
@@ -105,8 +104,9 @@ header form {
     kerning: auto;
 }
 
-.nav-meni>li a:hover {
-    cursor: pointer;
+.nav-meni .current {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
 }
 
 .opt-list>li a:hover {
