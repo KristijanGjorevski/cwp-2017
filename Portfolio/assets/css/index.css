@@ -165,7 +165,7 @@ video {
 .mouse-scroll {
     position: absolute;
     bottom: 2%;
-    width: 100%;
+    width: 100vw;
     height: 95px;
     display: flex;
     flex-direction: column;
@@ -239,9 +239,9 @@ video {
 /*                  second content BEGGINS */
 
 .short_about {
-    width: 60%;
+    width: 60vw;
     height: auto;
-    margin: 15vh auto;
+    margin: 10vh auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     justify-items: center;
@@ -269,13 +269,13 @@ video {
 
 .kiko {
     /* grid-area: picture; */
-    max-width: 683px;
+    max-width: 455px;
     height: auto;
     margin: 3vh auto;
 }
 
 .kiko img {
-    max-width: 683px;
+    max-width: 455px;
     max-height: 432px;
     height: auto;
 }
@@ -296,7 +296,7 @@ video {
 /*                  projects BEGGINS */
 
 .projects {
-    width: 60%;
+    width: 60vw;
     display: grid;
     grid-template-rows: repeat(3, minmax(200px, 1fr));
     margin: 10vh auto;
@@ -329,3 +329,82 @@ video {
 
 
 /*                  projects ENDS */
+
+
+/*              skills BEGINS        */
+
+.skills_container {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 10vh auto;
+}
+
+.skills_content h2 {
+    margin: 5vh auto;
+    font-size: 2vw;
+}
+
+.graphical_scale {
+    margin: 10vh auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    justify-items: center;
+}
+
+.graphical_scale section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.c100.blue .bar {
+    color: rgba(0, 162, 255, 0.3);
+}
+
+
+/*              skills ENDS        */
+
+
+/*              footer BEGINS     */
+
+footer {
+    width: 100vw;
+    height: 270px;
+}
+
+.footer_container {
+    color: #fff;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: url("../pictures/footer.jpg") no-repeat center;
+}
+
+.footer_content {
+    color: #fff;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    height: auto;
+}
+
+.footer_content h1 {
+    font-family: "kalamregular";
+    font-size: 4vw;
+}
+
+.footer_content span {
+    display: block;
+    font-size: 1.2em;
+}
+
+
+/*              footer ENDS     */

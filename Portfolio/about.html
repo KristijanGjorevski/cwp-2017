@@ -6,64 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/about.css">
     <link rel="stylesheet" type="text/css" href="assets/fonts/fonts.css">
     <link rel="stylesheet" href="assets/css/about.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 
 <body>
+    <div class="header_container">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo_img"></div>
+                </a>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Work</a></li>
+                </ul>
+            </nav>
+            <div class="s_m">
+                <ul>
+                    <li class="linked_in">
+                        <a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                    </li>
+                    <li class="facebook">
+                        <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+                    </li>
+                    <li class="instagram">
+                        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </div>
     <div class="page_container">
         <div class="bio">
             <h2>Short Bio</h2>
             <h5>Currently in Macedonia</h5>
-            <p>Went to school to become a mechanical engineer, by the time i came to colledge i had change of hearts and dropped it. For some time afterwards, i’ve worked in the food chamber and in that period i picked up handfull skills and some social
-                also but it wasn’t what i would like doing so for the rest of my trip. From my early days, till this day and forward, i’ve been spending my free time discovering new music, playing video games, customizing my computer, following technology
-                and enjoyed doing it. It wasn’t long after that i started doing research and began learning web development.</p>
+            <p>I went for schooling to become a <span class="potentiation">mechanical engineer</span>, by the time i came to colledge i had <span class="potentiation">change of hearts</span> and dropped it. For some time afterwards, i’ve <span class="potentiation">worked</span>                in the <span class="potentiation">food chamber</span> and in that period i picked up handfull skills but it <span class="potentiation">wasn’t
+                    what i would like doing</span> so for the rest of my trip. From my early days, till this day and forward, i’ve been spending my <span class="potentiation">free time</span> discovering new music, playing video games, customizing my
+                computer, following technology and enjoyed doing it. It wasn’t long after that i started doing research and began learning <span class="potentiation">web development</span>.
+            </p>
         </div>
         <div class="contact">
             <h2>Contact</h2>
             <div class="form_container">
                 <form method="POST">
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" placeholder="Name">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email">
-                    <label for="message">Message:</label>
-                    <input type="text" name="message">
-                    <input type="text">
-                    <button>SEND</button>
+                    <section>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" placeholder="Name">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="Email">
+                        <label for="subject">Subject type:</label>
+                        <select name="subject_type" id="">
+                        <option value="freelance">Freelance Project</option>
+                        <option value="part">Part time Job</option>
+                        <option value="full">Full time Job</option>
+                    </select>
+                    </section>
+                    <section>
+                        <label for="message">Message:</label>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Write the message here..."></textarea>
+                        <button class="about_btn">SEND</button>
+                    </section>
                 </form>
-            </div>
-            <div class="contact_info">
-                <span>+389 71 308 148 <i class="fas fa-phone"></i></span>
-                <span>kikogjorevski@gmail.com <i class="fas fa-at"></i></span>
-                <span><a href="https://www.linkedin.com/in/5-3-4-8-10">Check my Linked In</a> <i class="fab fa-linkedin-in"></i></span>
+                <div class="contact_info">
+                    <span><i class="fas fa-phone fa-2x"></i> +389 71 308 148</span>
+                    <span><i class="fas fa-at fa-2x"></i> kikogjorevski@gmail.com</span>
+                    <span><a href="https://www.linkedin.com/in/5-3-4-8-10"><i class="fab fa-linkedin-in fa-2x"></i> Check my Linked</a></span>
+                </div>
             </div>
         </div>
         <div class="qna">
             <h2>Q&A</h2>
             <div>
                 <span>Where do you see yourself in three years ?</span>
-                <span>Developing new ideas for future everyday necessity.</span>
+                <span class="potentiation">Developing new ideas for future everyday necessity.</span>
             </div>
             <div>
                 <span>How does your work fit into the world you want to live in?</span>
-                <span>Less steps taken to the desired result.</span>
+                <span class="potentiation">Less steps taken to the desired result.</span>
             </div>
             <div>
                 <span>What kind of projects interest you mostly?</span>
-                <span>Communication planning, cloud deployment, Location Based services.</span>
+                <span class="potentiation">Communication planning, cloud deployment, Location Based services.</span>
             </div>
             <div>
                 <span>What do you want people to do after visiting your website?</span>
-                <span>Hire me.</span>
+                <span class="potentiation">Hire me.</span>
             </div>
             <div>
                 <span>If someone were telling a potential client about you,what would you want them to say?</span>
-                <span>“...the guy with the appealing glasses...”.</span>
+                <span class="potentiation">“...the guy with the appealing glasses...”</span>
             </div>
-
         </div>
     </div>
 

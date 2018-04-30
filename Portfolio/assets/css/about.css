@@ -1,0 +1,133 @@
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.page_container {
+    width: 100%;
+    height: 100%;
+    padding: 7vh 8vw;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.bio {
+    text-align: start;
+    align-self: flex-start;
+}
+
+.bio p {
+    width: 45%;
+    line-height: 120%;
+}
+
+.contact {
+    text-align: center;
+    align-self: center;
+}
+
+.qna {
+    text-align: right;
+    white-space: nowrap;
+    align-self: flex-end;
+}
+
+.qna span {
+    line-height: 120%;
+    display: block;
+}
+
+.qna div {
+    margin: 10px;
+}
+
+.bio,
+.contact,
+.qna {
+    width: 100%;
+    height: 100%;
+    margin: 5vh auto;
+    display: flex;
+    flex-direction: column;
+    font-family: "rubikregular";
+    font-size: 1.2em;
+}
+
+.bio h2,
+.contact h2,
+.qna h2 {
+    font-family: "kalamregular";
+    font-size: 4vw;
+}
+
+.form_container {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+}
+
+form {
+    display: flex;
+    justify-items: center;
+    color: rgba(0, 162, 255, 1);
+}
+
+form label {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+form input,
+form select,
+form textarea {
+    padding: 15px;
+    color: rgba(0, 162, 255, 1);
+    font: 500 18px "rubikregular";
+    border-radius: 10px;
+    border: 2px solid rgba(0, 162, 255, 1);
+}
+
+form select {
+    width: 100%;
+}
+
+form option {
+    padding: 10px;
+    color: rgba(0, 162, 255, 1);
+    font-size: 1.2rem;
+}
+
+form button {
+    display: block;
+    margin: auto;
+}
+
+form section {
+    margin: auto 10px;
+}
+
+.contact_info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: auto;
+}
+
+.contact_info span {
+    margin: 10px 0;
+}
+
+.contact_info a {
+    color: #fff;
+}
+
+.contact_info a:hover {
+    color: rgba(0, 162, 255, 1);
+}
