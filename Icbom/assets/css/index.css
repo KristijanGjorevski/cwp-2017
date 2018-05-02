@@ -252,6 +252,7 @@ header form {
 .logo figure {
     display: flex;
     justify-content: center;
+    color: rgba(40, 79, 139.1, 0.9);
 }
 
 .logo img {
@@ -373,7 +374,7 @@ header form {
     width: 100%;
     text-align: left;
     padding: 10px 15%;
-    background: rgba(82, 130, 44, 0.5);
+    background: rgba(40, 79, 139, 0.7);
 }
 
 
@@ -403,7 +404,7 @@ header form {
     width: 100%;
     padding: 10px 32%;
     text-align: center;
-    background: rgba(130, 31, 27, 0.5);
+    background: rgba(40, 79, 139, 0.7);
 }
 
 
@@ -433,7 +434,7 @@ header form {
     width: 100%;
     padding: 10px 15%;
     text-align: right;
-    background: rgba(160, 160, 55, 0.5);
+    background: rgba(40, 79, 139, 0.7);
 }
 
 
@@ -457,7 +458,9 @@ header form {
     padding: 25px;
     width: 40vw;
     color: white;
-    letter-spacing: 2px;
+    font-size: 1.2em;
+    line-height: 26px;
+    word-spacing: 1px;
 }
 
 .slide-content>span>h3 {
@@ -828,6 +831,9 @@ header form {
 .posts_content p {
     margin: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 24px;
+    word-spacing: 0px;
 }
 
 
@@ -854,7 +860,12 @@ header form {
     justify-items: center;
     width: 60vw;
     margin: auto;
+    font-size: 1rem;
+    line-height: 22px;
+    /* word-spacing: 0px; */
 }
+
+.mission {}
 
 .about_container {
     display: flex;
@@ -968,7 +979,7 @@ header form {
 footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
-    background-color: #7c7c7c;
+    background-color: rgb(124, 126, 140);
 }
 
 footer>div {

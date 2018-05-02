@@ -27,6 +27,25 @@ function addUser($data){
 
 }
 
+function updateUser($data){
+    
+    $sql = "UPDATE users
+            SET
+            firstname = :firstname,
+            lastname = :lastname,
+            email = :email
+            WHERE
+            password = :password";
+
+
+    $query = DB::Get()->prepare($sql);
+    $query->bindValue(":firstname",$data["firstname"],PDO::PARAM_STR);
+    $query->bindValue(":lastname",$data["lastname"],PDO::PARAM_STR);
+    $query->bindValue(":email",$data["email"],PDO::PARAM_STR);
+    $query->bindValue(":password",$data["password"],PDO::PARAM_STR);
+    $query->execute();
+}
+
 function checkEmail($email){
        
     $sql = "SELECT email FROM users WHERE email = :email";

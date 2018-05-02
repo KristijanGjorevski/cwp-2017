@@ -352,6 +352,7 @@ video {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     justify-items: center;
+    color: #fff;
 }
 
 .graphical_scale section {
