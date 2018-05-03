@@ -61,7 +61,7 @@ form {
 
 input,
 textarea {
-    border: 1px solid rgba(225, 225, 225, 0.9);
+    border: 2px solid transparent;
     -webkit-box-shadow: 0 5px 10px rgba(128, 128, 128, 0.4), 0 5px 10px rgba(128, 128, 128, 0.4);
     -moz-box-shadow: 0 5px 10px rgba(128, 128, 128, 0.4), 0 5px 10px rgba(128, 128, 128, 0.4);
     box-shadow: 0 5px 10px rgba(128, 128, 128, 0.4), 0 5px 10px rgba(128, 128, 128, 0.4);
@@ -113,7 +113,7 @@ form>section:last-child {
 }
 
 form>section div {
-    margin: 25px;
+    margin: 15px auto;
 }
 
 label {
