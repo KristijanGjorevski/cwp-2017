@@ -5,7 +5,7 @@
     .main-nav>ol {
         /* position: absolute; */
         font-size: 0.67rem;
-        grid-template-columns: repeat(3, minmax(50px, 200px));
+        grid-template-columns: repeat(3, minmax(45px, 200px));
         /* bottom: 0; */
     }
     .main-nav>ol li>div {

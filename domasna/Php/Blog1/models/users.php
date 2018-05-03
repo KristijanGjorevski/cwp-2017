@@ -15,13 +15,13 @@ function getUsers(){
 
 function addUser($data){
 
-    $sql = "INSERT INTO users(firstname,lastname,email,avatar,password) VALUES (:firstname,:lastname,:email,:avatar,:password)";
+    $sql = "INSERT INTO users(firstname,lastname,email,password) VALUES (:firstname,:lastname,:email,:password)";
 
     $query = DB::Get()->prepare($sql);
     $query->bindValue(":firstname", $data["firstname"],PDO::PARAM_STR);
     $query->bindValue(":lastname", $data["lastname"],PDO::PARAM_STR);
     $query->bindValue(":email", $data["email"],PDO::PARAM_STR);
-    $query->bindValue(":avatar", $data["avatar"],PDO::ATTR_PREFETCH);
+    // $query->bindValue(":avatar", $data["avatar"],PDO::ATTR_PREFETCH);
     $query->bindValue(":password", $data["password"],PDO::PARAM_STR);
     $query->execute();
 
@@ -46,6 +46,15 @@ function updateUser($data){
     $query->execute();
 }
 
+function deleteUser($user_email){
+    
+    $sql = "DELETE FROM users WHERE email = :email";
+
+    $query = DB::Get()->prepare($sql);
+    $query->bindValue(":email", $user_email,PDO::PARAM_STR);
+    $query->execute();
+}
+
 function checkEmail($email){
        
     $sql = "SELECT email FROM users WHERE email = :email";
@@ -55,7 +64,7 @@ function checkEmail($email){
     $query->execute();
     $checkedEmail = $query->fetchAll(PDO::FETCH_ASSOC);
 
-    if(array_search($email,$checkedEmail) !== null){
+    if(array_search($email,$checkedEmail) != null){
 
         return false;
     }else{ return true; }

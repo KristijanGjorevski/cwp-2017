@@ -3,7 +3,6 @@
     include("../models/users.php");
 
 $isValid = isset($_POST["firstname"]) && $_POST["firstname"] != "" && isset($_POST["lastname"]) && $_POST["lastname"] != "" && isset($_POST["password"]) && $_POST["password"] != "" && isset($_POST["email"]) && $_POST["email"] != "";
-$updValid = isset($_POST["upd_firstname"]) && $_POST["upd_firstname"] != "" && isset($_POST["upd_lastname"]) && $_POST["upd_lastname"] != "" && isset($_POST["upd_password"]) && $_POST["upd_password"] != "" && isset($_POST["upd_email"]) && $_POST["upd_email"] != "";
 
 if($isValid){
 
@@ -14,40 +13,45 @@ if($isValid){
     
     if($email){
         
-        $emailcheck = checkEmail($email);
+        if(isset($_POST["update"]) && $_POST["update"] == "update"){
 
-        if($emailcheck){
-
-            $data =[
+            $data = [
                 "firstname" => $firstname,
                 "lastname" => $lastname,
-                "password" => $password,
                 "email" => $email,
-                "avatar" => $_FILES["avatar"]
+                "password" => $password
             ];
+        
+            updateUser($data);
+        }
 
-            addUser($data);
+        if(isset($_POST["add"]) && $_POST["add"] == "add"){
+
+            $emailcheck = checkEmail($email);
+
+            if($emailcheck){
+
+                $data =[
+                    "firstname" => $firstname,
+                    "lastname" => $lastname,
+                    "password" => $password,
+                    "email" => $email
+                    // "avatar" => $_FILES["avatar"]
+                ];
+    
+                addUser($data);
+            }
 
         }else { die("Allready registered with that email."); }
     }
 }
-if($updValid){
 
-    $firstname = trim(ucfirst($_POST["upd_firstname"]));
-    $lastname = ucfirst($_POST["upd_lastname"]);
-    $email = filter_var($_POST["upd_email"],FILTER_VALIDATE_EMAIL);
-    $password = filter_var($_POST["upd_password"],FILTER_SANITIZE_ENCODED,FILTER_FLAG_ENCODE_HIGH);
+if(isset($_POST["delete"]) && $_POST["delete"] == "delete"){
 
-    $data = [
-        "firstname" => $firstname,
-        "lastname" => $lastname,
-        "email" => $email,
-        "password" => $password
-    ];
+    $email = filter_var($_POST["email"],FILTER_VALIDATE_EMAIL);
 
-    updateUser($data);
-
-}
+    deleteUser($email);
+}  
 
  $res = getUsers();
 
@@ -73,7 +77,7 @@ if($updValid){
 </table>
 <hr>
 
-<h1>Add users</h1>
+<h1>Manage users table</h1>
     <form action="<?= $_SERVER['PHP_SELF']?>" method="POST" enctype="multipart/form-data">
         <label for="firstname">Firstname</label>
         <input type="text" name="firstname">
@@ -85,22 +89,14 @@ if($updValid){
         <input type="email" name="email">
         <label for="Avatar">Avatar</label>
         <input type="file" name="avatar">'
-        <input type="submit">
+        <br>
+        <button type="submit" name="add" value="add">Add new user</button>
+        <br>
+        <button type="submit" name="update" value="update">Update user by password</button>
+        <br>
+        <button type="submit" name="delete" value="delete">Delete user by email</button>
+        <br>
     </form>
 
-<hr>
-
-<h1>Update users By Password</h1>
-<form action="<?= $_SERVER['PHP_SELF']?>" method="POST">
-        <label for="upd_firstname">Firstname</label>
-        <input type="text" name="upd_firstname">
-        <label for="upd_lastname">lastname</label>
-        <input type="text" name="upd_lastname">
-        <label for="upd_password">password</label>
-        <input type="password" name="upd_password">
-        <label for="upd_email">email</label>
-        <input type="email" name="upd_email">
-        <input type="submit">
-    </form>
 
 
