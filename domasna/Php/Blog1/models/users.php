@@ -46,6 +46,39 @@ function updateUser($data){
     $query->execute();
 }
 
+function editbyID($id){
+    $sql = "SELECT * FROM users WHERE id=:id";
+
+    $query = DB::Get()->prepare($sql);
+    $query->bindValue("id",$id,PDO::PARAM_INT);
+    $query->execute();
+    $result = $query->fetchAll(PDO::FETCH_ASSOC);
+
+    return $result;
+
+}
+
+function updateeUser($data){
+    
+    $sql = "UPDATE users
+            SET
+            firstname = :firstname,
+            lastname = :lastname,
+            email = :email,
+            password = :password
+            WHERE
+            id = :id";
+
+
+    $query = DB::Get()->prepare($sql);
+    $query->bindValue(":firstname",$data["firstname"],PDO::PARAM_STR);
+    $query->bindValue(":lastname",$data["lastname"],PDO::PARAM_STR);
+    $query->bindValue(":email",$data["email"],PDO::PARAM_STR);
+    $query->bindValue(":password",$data["password"],PDO::PARAM_STR);
+    $query->bindValue(":id",$data["id"],PDO::PARAM_INT);
+    $query->execute();
+}
+
 function deleteUser($user_email){
     
     $sql = "DELETE FROM users WHERE email = :email";
@@ -70,5 +103,17 @@ function checkEmail($email){
     }else{ return true; }
 
 }
+
+function deletebyId($id){
+
+    $sql = "DELETE FROM users WHERE id = :id";
+
+    $query = DB::Get()->prepare($sql);
+    $query->bindValue(":id",$id,PDO::PARAM_INT);
+    $query->execute();
+
+}
+
+
 
 ?>
